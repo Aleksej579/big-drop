@@ -19,6 +19,7 @@ nav .wrapper_logo {
   display: flex;
   align-items: center;
   margin-left: 55px;
+  cursor: pointer;
 }
 nav .wrapper_logo span {
   display: block;
@@ -252,6 +253,69 @@ aside .wrapper_card_np .card_np .wrapper_teaser .teaser_text {
 aside .wrapper_card_np .card_np .wrapper_teaser .teaser_link {
   color: #0f0f0f;
   font-size: 12px;
+}
+
+.wrapper_menu_serch ul li {
+  cursor: pointer;
+}
+
+footer {
+  height: 163px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+footer ul {
+  display: flex;
+  height: min-content;
+  margin-top: 20px;
+}
+footer ul li {
+  list-style-type: none;
+  margin: 0 35px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+footer .wrapper_social_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .wrapper_social_copyright .wrapper_social {
+  display: flex;
+  justify-content: end;
+  padding-right: 47px;
+}
+footer .wrapper_social_copyright .wrapper_social span {
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 8px;
+}
+footer .wrapper_social_copyright .wrapper_social span a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+footer .wrapper_social_copyright .wrapper_social .facebook {
+  background-image: url(/image/icons/facebook.svg);
+}
+footer .wrapper_social_copyright .wrapper_social .houzz {
+  background-image: url(/image/icons/houzz.svg);
+}
+footer .wrapper_social_copyright .wrapper_social .twitter {
+  background-image: url(/image/icons/twitter.svg);
+}
+footer .wrapper_social_copyright .wrapper_social .instagram {
+  background-image: url(/image/icons/instagram.svg);
+}
+footer .wrapper_social_copyright p {
+  color: #b5b5b5;
+  padding-right: 105px;
 }
 
 /*# sourceMappingURL=style.css.map */
