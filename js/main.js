@@ -99,3 +99,15 @@ $('#contact_us, .contact_us').on('click', function () {
     });
 });
 
+// fixed menu fo scroll
+let $nav = $('nav')
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $nav.height(35);
+        $nav.css("transition", "0.5s linear")
+        $nav.css("box-shadow", "0 0 10px rgba(0,0,0,0.5)")
+    } else {
+        $nav.height(100);
+        $nav.css("transition", "0.1s linear")
+    }
+});

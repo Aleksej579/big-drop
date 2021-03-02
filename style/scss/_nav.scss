@@ -5,6 +5,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
     .wrapper_logo {
         height: 33px;
         display: flex;
@@ -40,6 +46,16 @@ nav {
                 color: $color-grey;
                 list-style-type: none;
                 text-transform: uppercase;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 10px;
+                border-radius: 5px;
+                span {
+                    border-bottom: 1px solid #565656;
+                    display: block;
+                    width: 0;
+                }
             }
         }
         .wraper_search {

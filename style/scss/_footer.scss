@@ -9,9 +9,12 @@ footer {
         margin-top: 20px;
         li {
             list-style-type: none;
-            margin: 0 35px;
+            margin: 0 25px;
             text-transform: uppercase;
             cursor: pointer;
+            border: 1px solid transparent;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     }
     .wrapper_social_copyright {
