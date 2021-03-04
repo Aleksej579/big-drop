@@ -69,6 +69,7 @@ nav .wrapper_menu_serch {
 @media only screen and (max-width: 420px) {
   nav .wrapper_menu_serch {
     position: relative;
+    justify-content: flex-end;
   }
 }
 nav .wrapper_menu_serch ul {
