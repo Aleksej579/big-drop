@@ -1,13 +1,12 @@
 @use './var';
 
-// .test_h {
-//     text-align: center;
-// }
-
 main {
     width: 630px;
     margin: 0 auto;
     line-height: 24px;
+    @include media("max", "sm") {
+        width: 100%;
+    }
     p, h3 {
         padding-left: 30px;
         padding-right: 30px;
@@ -38,6 +37,10 @@ main {
             font-family: 'Libre Baskerville', serif;
             line-height: 30px;
             padding-left: 73px;
+            @include media("max", "xs") {
+                padding-left: 45px;
+                padding-right: 0;
+            }
         }
         p::before {
             content: '“';

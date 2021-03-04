@@ -3,10 +3,28 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    @include media("max", "md") {
+        flex-direction: column;
+        height: 100px;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    @include media("max", "xs") {
+        height: 70px;
+    }
     ul {
         display: flex;
         height: min-content;
         margin-top: 20px;
+        @include media("max", "md") {
+            margin-top: 0;
+        }
+        @include media("max", "sm") {
+            justify-content: center;
+        }
+        @include media("max", "xs") {
+            display: none;
+        }
         li {
             list-style-type: none;
             margin: 0 25px;
@@ -15,16 +33,28 @@ footer {
             border: 1px solid transparent;
             padding: 5px 10px;
             border-radius: 5px;
+            @include media("max", "sm") {
+                margin: 0;
+                font-size: 11px;
+            }
         }
     }
     .wrapper_social_copyright {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        @include media("max", "md") {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
         .wrapper_social {
             display: flex;
             justify-content: end;
             padding-right: 47px;
+            @include media("max", "md") {
+                padding: 0;
+            }
             span {
                 height: 40px;
                 width: 40px;
@@ -34,6 +64,9 @@ footer {
                 background-repeat: no-repeat;
                 background-position: center;
                 margin: 8px;
+                @include media("max", "sm") {
+                    margin: 4px;
+                }
                 a {
                     display: block;
                     height: 100%;
@@ -56,6 +89,16 @@ footer {
         p {
             color: #b5b5b5;
             padding-right: 105px;
+            @include media("max", "md") {
+                padding: 0;
+            }
+            @include media("max", "sm") {
+                font-size: 14px;
+                padding: 0 8px;
+            }
+            @include media("max", "xs") {
+                display: none;
+            }
         }
     }
 }

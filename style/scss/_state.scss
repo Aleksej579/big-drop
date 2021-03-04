@@ -36,3 +36,13 @@ h2:hover {
     transform-origin: bottom;
     transition: 0.3s;
 }
+
+aside .wrapper_card_np .card_np:hover {
+    box-shadow: none;
+    transition: 0.3s;
+}
+aside .wrapper_card_np .card_np img:hover {
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: 0.3s;
+}

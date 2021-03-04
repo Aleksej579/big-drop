@@ -10,6 +10,10 @@ aside {
         font-weight: 500;
         margin-top: 70px;
         margin-bottom: 50px;
+        @include media("max", "sm") {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
     }
     .wrapper_card_np {
         width: 100%;
@@ -17,6 +21,12 @@ aside {
         align-items: center;
         justify-content: center;
         margin-bottom: 70px;
+        @include media("max", "md") {
+            flex-direction: column;
+        }
+        @include media("max", "sm") {
+            margin-bottom: 25px;
+        }
         .card_np {
             height: 190px;
             width: 375px;
@@ -24,6 +34,14 @@ aside {
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
             margin: 0 15px;
             display: flex;
+            @include media("max", "md") {
+                margin: 15px 0;
+            }
+            @include media("max", "xs") {
+                height: 120px;
+                width: 300px;
+                min-width: 300px;
+            }
             img {
                 width: auto;
                 height: 100%;
@@ -34,6 +52,10 @@ aside {
                 flex-direction: column;
                 justify-content: space-between;
                 padding: 21px;
+                @include media("max", "xs") {
+                    padding: 12px 0 12px 12px;
+                    width: 70%;
+                }
                 .title {
                     color: $color-np;
                     text-transform: uppercase;
@@ -43,6 +65,11 @@ aside {
                     color: $color-grey-text-h3;
                     font-size: 16px;
                     line-height: 20px;
+                    @include media("max", "xs") {
+                        overflow-y: auto;
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
                 }
                 .teaser_link {
                     color: $color-grey-text-h3;
