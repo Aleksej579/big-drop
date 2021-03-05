@@ -45,6 +45,7 @@ nav {
         justify-content: end;
         @include media("max", "sm") {
             position: relative;
+            justify-content: flex-end;
         }
         ul {
             display: flex;
