@@ -1,5 +1,3 @@
-https://big-drop.netlify.app
-
 Use tools:
 
 https://typeitjs.com/ 
